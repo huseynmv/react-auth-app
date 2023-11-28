@@ -6,6 +6,7 @@ import { store } from "../../../store/store.config";
 import { setUser } from "../../../store/store.reducer";
 import { setToken } from "../../../core/helpers/get-token";
 import { Routes } from "../../../router/routes";
+import { warningToast } from "../../../core/shared/toast/toast";
 
 export const useLogin = () => {
   const navigate = useNavigate();
@@ -18,6 +19,9 @@ export const useLogin = () => {
       setToken(response.accessToken);
       store.dispatch(setUser(response.user.email));
       navigate(Routes.home);
+    },
+    onError: (error: Error) => {
+      console.log("Login failed", error);
     },
   });
 };
