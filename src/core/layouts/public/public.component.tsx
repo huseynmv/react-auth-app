@@ -1,5 +1,10 @@
+import { Outlet } from "react-router-dom";
+import { useStore } from "../../../store/store.config";
+
+// import { useStore } from "react-redux";
+
 const PublicComponent = () => {
-  return <div>PublicComponent</div>;
+  return <Outlet />;
 };
 
 export default PublicComponent;

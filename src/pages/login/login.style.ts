@@ -3,7 +3,7 @@ import colors from "../../assets/styles/abstracts/color";
 import { rem } from "../../assets/styles/abstracts/functions";
 
 const styles = {
-  page: {},
+  page: { height: "100vh" },
   left: {
     backgroundColor: "#ECBC76",
     minHeight: "100vh",

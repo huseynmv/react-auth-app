@@ -1,11 +1,49 @@
-import React from "react";
-import { Button, Card, Form, Input } from "antd";
+import { useCallback, useMemo } from "react";
+import { Button, Form, Input, FormRule } from "antd";
 import { useLoginStyles } from "./login.style";
 import bgLeft from "../../assets/images/statics/background-left.png";
 import bgRight from "../../assets/images/statics/background-right.png";
+import { useLogin } from "./actions/login.mutation";
+import { ILoginFormValues } from "./login";
 
 const LoginComponent = () => {
+  const { mutate, isLoading } = useLogin();
+
   const styles = useLoginStyles();
+
+  const initialValues: ILoginFormValues = {
+    email: "",
+    password: "",
+  };
+  const onSubmit = useCallback(
+    (values: ILoginFormValues) => {
+      mutate(values);
+    },
+    [mutate]
+  );
+
+  const rules: { [key: string]: FormRule[] } = useMemo(
+    () => ({
+      email: [
+        {
+          required: true,
+          message: "Iinput required",
+        },
+        {
+          // add a pattern for email regex
+          pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+          message: "Invalid email",
+        },
+      ],
+      password: [
+        {
+          required: true,
+          message: "Input required",
+        },
+      ],
+    }),
+    []
+  );
 
   return (
     <div className={styles.page}>
@@ -22,24 +60,61 @@ const LoginComponent = () => {
           <p>Welcome to the site</p>
         </div>
         <p className={styles.subTitle}>Sign In</p>
-        <Form name="login" layout="vertical">
+        <Form
+          name="login"
+          layout="vertical"
+          onFinish={onSubmit}
+          initialValues={initialValues}
+        >
           <Form.Item
+            rules={rules.email}
             style={{ marginTop: 38 }}
-            name="Email"
+            name="email"
             label="Enter your username or email address"
           >
             <Input placeholder="Username or email" type="email" />
           </Form.Item>
           <Form.Item
+            rules={rules.password}
             style={{ marginTop: 38 }}
-            name="Password"
+            name="password"
             label="Enter your username or email address"
           >
             <Input placeholder="Password" type="password" />
           </Form.Item>
-          <div>
-            <Button className="w-100" type="primary" htmlType="submit">
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Button
+              loading={isLoading}
+              style={{
+                width: "100%",
+                fontSize: 16,
+                backgroundColor: "#E48700",
+              }}
+              className="w-100"
+              type="primary"
+              htmlType="submit"
+            >
               Sign In
+            </Button>
+            <span style={{ marginTop: 33, marginBottom: 33 }}>or</span>
+            <Button
+              style={{
+                width: "100%",
+                fontSize: 16,
+                backgroundColor: "#E48700",
+              }}
+              className="w-100"
+              type="primary"
+              htmlType="submit"
+            >
+              Sign Up
             </Button>
           </div>
         </Form>

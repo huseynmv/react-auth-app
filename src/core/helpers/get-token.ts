@@ -4,6 +4,6 @@ export const getToken = (): string | null => {
   return localStorage.getItem(`${environment.applicationName}-token`);
 };
 
-export const setToken = (token: string) => {
+export const setToken = (token: any) => {
   localStorage.setItem(`${environment.applicationName}-token`, token);
 };

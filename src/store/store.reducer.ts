@@ -5,6 +5,7 @@ import { environment } from "../core/configs/app.config";
 
 const initialState: IState = {
   user: null,
+  loader: false,
 };
 
 export const rootSlice = createSlice({
@@ -13,11 +14,14 @@ export const rootSlice = createSlice({
   reducers: {
     setUser: (state: IState, action: PayloadAction<any>) => {
       // state.user = jwtDecode(action.payload);
-      state.user = "user";
+      state.user = action.payload;
+    },
+    setLoader: (state: IState, action: PayloadAction<boolean>) => {
+      state.loader = action.payload;
     },
   },
 });
 
-export const { setUser } = rootSlice.actions;
+export const { setUser, setLoader } = rootSlice.actions;
 
 export default rootSlice.reducer;
