@@ -4,6 +4,13 @@
       "email": "huseyn@mail.com",
       "password": "$2a$10$.zR7M8uk9Ea7oMLD40QspOZYNO1tE0qWG4IS1K8I1G/.PDXG50T3C",
       "id": 1
+    },
+    {
+      "email": "salam@gmail.com",
+      "password": "$2a$10$ANDWsMbC2YG4RpbzaSNoQO.pFP7ukNjsP3AEi7LULc7dDGlA/sBMC",
+      "username": "salam",
+      "number": "salam",
+      "id": 2
     }
   ]
 }

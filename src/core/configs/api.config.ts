@@ -1,3 +1,4 @@
 export const API = {
-  posts: "login",
+  login: "login",
+  register: "register",
 };

@@ -5,6 +5,7 @@ import PublicComponent from "../core/layouts/public/public.component";
 import { Routes } from "./routes";
 import HomeComponent from "../pages/home/home.component";
 import LoginComponent from "../pages/login/login.component";
+import RegisterComponent from "../pages/register/register.component";
 
 const router = createBrowserRouter(
   [
@@ -32,6 +33,10 @@ const router = createBrowserRouter(
         {
           path: Routes.login,
           element: <LoginComponent />,
+        },
+        {
+          path: Routes.register,
+          element: <RegisterComponent />,
         },
       ],
     },
