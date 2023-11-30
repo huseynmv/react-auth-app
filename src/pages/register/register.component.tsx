@@ -62,29 +62,18 @@ const RegisterComponent = () => {
           <p>Welcome to the site</p>
         </div>
         <p className={styles.subTitle}>Sign Up</p> */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-start",
-            // padding: 50,
-          }}
-        >
+        <div className={styles.header}>
           <div>
-            <p style={{ fontSize: 20, fontWeight: "400" }}>Welcome to Site</p>
-            <p style={{ fontSize: 55, fontWeight: "500" }}>Sign Up</p>
+            <p className={styles.title}>Welcome to Site</p>
+            <p className={styles.subTitle}>Sign Up</p>
           </div>
           <div
             style={{
               paddingLeft: 121,
             }}
           >
-            <p style={{ fontSize: 13, color: "#8d8d8d", fontWeight: "400" }}>
-              Having Account?
-            </p>
-            <p style={{ fontSize: 13, color: "#B87514", fontWeight: "400" }}>
-              Sign in
-            </p>
+            <p className={styles.headerLeftTitle}>Having Account?</p>
+            <p className={styles.headerLeftSubtitle}>Sign in</p>
           </div>
         </div>
         <Form
@@ -132,11 +121,7 @@ const RegisterComponent = () => {
               type="primary"
               htmlType="submit"
               loading={isLoading}
-              style={{
-                width: "100%",
-                backgroundColor: "#E48700",
-                color: "white",
-              }}
+              className={styles.button}
             >
               Register
             </Button>

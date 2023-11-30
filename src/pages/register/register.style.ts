@@ -8,12 +8,9 @@ const styles = {
     backgroundColor: "#ECBC76",
     minHeight: "100vh",
     width: "50%",
-    justifyContent: "center",
   },
   right: {
     backgroundColor: "#FFFFFF",
-    minHeight: "100vh",
-    width: "40%",
   },
   wrapper: { display: "flex" },
   form: {
@@ -31,21 +28,31 @@ const styles = {
     color: "black",
     fontSize: 20,
     fontWeight: "400",
-    // alignItems: "center",
-    // display: "flex",
-    // justifyContent: "center",
-    // alignItems: "center",
-    // padding: "0px 188px",
-    // word-wrap: break-word
   },
   subTitle: {
     color: "black",
     fontSize: 55,
     fontWeight: "500",
-    // display: "flex",
-    // justifyContent: "center",
-    // alignItems: "center",
-    // padding: "0px 177px",
+  },
+  header: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+  },
+  headerLeftTitle: {
+    fontSize: 13,
+    color: "#8d8d8d",
+    fontWeight: "400",
+  },
+  headerLeftSubtitle: {
+    fontSize: 13,
+    color: "#B87514",
+    fontWeight: "400",
+  },
+  button: {
+    width: "100%",
+    backgroundColor: "#E48700",
+    color: "white",
   },
 };
 

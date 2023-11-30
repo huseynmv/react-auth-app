@@ -8,12 +8,9 @@ const styles = {
     backgroundColor: "#ECBC76",
     minHeight: "100vh",
     width: "50%",
-    justifyContent: "center",
   },
   right: {
     backgroundColor: "#FFFFFF",
-    minHeight: "100vh",
-    width: "40%",
   },
   wrapper: { display: "flex" },
   form: {
@@ -31,21 +28,13 @@ const styles = {
     color: "black",
     fontSize: 20,
     fontWeight: "400",
-    // alignItems: "center",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
     padding: "0px 188px",
-    // word-wrap: break-word
   },
   subTitle: {
     color: "black",
     fontSize: 55,
     fontWeight: "500",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "0px 177px",
+    textAlign: "center",
   },
 };
 

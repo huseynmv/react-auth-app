@@ -11,6 +11,13 @@
       "username": "salam",
       "number": "salam",
       "id": 2
+    },
+    {
+      "email": "yusif@mail.com",
+      "password": "$2a$10$A.pRyvqNFpJj0LZ.3CnBA.HyxXEiEuj6i.S6AsaPoec6qfWnemQN2",
+      "username": "yusif",
+      "number": "salam",
+      "id": 3
     }
   ]
 }

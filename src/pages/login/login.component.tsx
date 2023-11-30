@@ -8,6 +8,10 @@ import { ILoginFormValues } from "./login";
 import { Router, useNavigate } from "react-router-dom";
 import { Routes } from "../../router/routes";
 
+const CustomLabel = () => (
+  <div style={{ color: "red", fontWeight: "bold" }}>Custom Label:</div>
+);
+
 const LoginComponent = () => {
   const navigate = useNavigate();
 
@@ -72,17 +76,23 @@ const LoginComponent = () => {
         >
           <Form.Item
             rules={rules.email}
+            required={false}
             style={{ marginTop: 38 }}
             name="email"
-            label="Enter your username or email address"
+            label={
+              <p style={{ fontSize: "16px" }}>
+                Enter your username or email address
+              </p>
+            }
           >
             <Input placeholder="Username or email" type="email" />
           </Form.Item>
           <Form.Item
             rules={rules.password}
+            required={false}
             style={{ marginTop: 38 }}
             name="password"
-            label="Enter your username or email address"
+            label="Enter your password"
           >
             <Input placeholder="Password" type="password" />
           </Form.Item>
