@@ -18,6 +18,13 @@
       "username": "yusif",
       "number": "salam",
       "id": 3
+    },
+    {
+      "email": "mammadovhuseyn37@gmail.com",
+      "password": "$2a$10$cNhsUaKWhxNl0S3xQW8HbetE4DLs19zEl9M4TOcuqElRGIL6RkphG",
+      "username": "memmedovh5@gmail.com",
+      "number": "ssas",
+      "id": 4
     }
   ]
 }

@@ -6,7 +6,6 @@ import { store } from "../../../store/store.config";
 import { setUser } from "../../../store/store.reducer";
 import { setToken } from "../../../core/helpers/get-token";
 import { Routes } from "../../../router/routes";
-import { warningToast } from "../../../core/shared/toast/toast";
 
 export const useLogin = () => {
   const navigate = useNavigate();

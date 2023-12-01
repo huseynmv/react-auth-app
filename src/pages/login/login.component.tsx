@@ -122,7 +122,8 @@ const LoginComponent = () => {
               style={{
                 width: "100%",
                 fontSize: 16,
-                backgroundColor: "#E48700",
+                backgroundColor: "#FFF4E3",
+                color: "#BC7E23",
               }}
               className="w-100"
               type="primary"
