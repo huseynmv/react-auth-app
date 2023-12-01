@@ -1,8 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IState } from "./store";
 
-import { environment } from "../core/configs/app.config";
-
 const initialState: IState = {
   user: null,
   loader: false,
