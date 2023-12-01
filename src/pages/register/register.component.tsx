@@ -84,9 +84,10 @@ const RegisterComponent = () => {
         >
           <Form.Item
             rules={rules.email}
+            required={false}
             name="email"
             label="Enter your username or email address"
-            style={{ marginTop: 15 }}
+            className={styles.label}
           >
             <Input placeholder="Username or email" type="email" />
           </Form.Item>
