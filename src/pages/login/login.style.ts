@@ -1,6 +1,5 @@
 import { createUseStyles } from "react-jss";
 import colors from "../../assets/styles/abstracts/color";
-import { rem } from "../../assets/styles/abstracts/functions";
 import { breakpoint } from "../../assets/styles/abstracts/mixins";
 
 const styles = {
@@ -31,10 +30,8 @@ const styles = {
     padding: "50px 40px",
     backgroundColor: "white",
     [breakpoint(1200)]: {
-      // padding: 0,
       maxWidth: "100%",
       margin: 0,
-      // paddingBottom: 35,
       paddingLeft: 10,
       paddingRight: 10,
     },
@@ -43,15 +40,15 @@ const styles = {
     color: colors.textPrimaryColor,
     fontSize: 20,
     fontWeight: "400",
-    padding: rem(0) + "" + rem(188),
+    padding: "0px 188px",
     [breakpoint(1200)]: {
-      padding: rem(0) + "" + rem(100),
+      padding: "0px 100px",
       float: "left",
       fontSize: 16,
     },
   },
   subTitle: {
-    color: colors.textPrimaryColor,
+    color: "black",
     fontSize: 55,
     fontWeight: "500",
     textAlign: "center",

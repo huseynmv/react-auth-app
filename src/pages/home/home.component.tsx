@@ -1,4 +1,3 @@
-import React from "react";
 import { useStore } from "../../store/store.config";
 import { useHomeStyles } from "./home.style";
 import { removeToken } from "../../core/helpers/get-token";
@@ -10,7 +9,6 @@ const HomeComponent = () => {
   const user = useStore("user");
   const styles = useHomeStyles();
   const navigate = useNavigate();
-  console.log(user);
 
   return (
     <>

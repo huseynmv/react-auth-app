@@ -13,7 +13,6 @@ export const rootSlice = createSlice({
   initialState,
   reducers: {
     setUser: (state: IState, action: PayloadAction<any>) => {
-      // state.user = jwtDecode(action.payload);
       state.user = action.payload;
     },
     setLoader: (state: IState, action: PayloadAction<boolean>) => {

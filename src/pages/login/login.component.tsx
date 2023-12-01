@@ -5,7 +5,7 @@ import bgLeft from "../../assets/images/statics/background-left.png";
 import bgRight from "../../assets/images/statics/background-right.png";
 import { useLogin } from "./actions/login.mutation";
 import { ILoginFormValues } from "./login";
-import { Router, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Routes } from "../../router/routes";
 import colors from "../../assets/styles/abstracts/color";
 
