@@ -6,7 +6,7 @@ import { breakpoint } from "../../assets/styles/abstracts/mixins";
 const styles = {
   page: { height: "100vh" },
   left: {
-    backgroundColor: "#ECBC76",
+    backgroundColor: colors.bgColor,
     minHeight: "100vh",
     width: "50%",
     [breakpoint(1200)]: {
@@ -40,18 +40,18 @@ const styles = {
     },
   },
   title: {
-    color: "black",
+    color: colors.textPrimaryColor,
     fontSize: 20,
     fontWeight: "400",
-    padding: "0px 188px",
+    padding: rem(0) + "" + rem(188),
     [breakpoint(1200)]: {
-      padding: "0px 100px",
+      padding: rem(0) + "" + rem(100),
       float: "left",
       fontSize: 16,
     },
   },
   subTitle: {
-    color: "black",
+    color: colors.textPrimaryColor,
     fontSize: 55,
     fontWeight: "500",
     textAlign: "center",

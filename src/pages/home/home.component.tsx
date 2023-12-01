@@ -4,6 +4,7 @@ import { useHomeStyles } from "./home.style";
 import { removeToken } from "../../core/helpers/get-token";
 import { useNavigate } from "react-router-dom";
 import { Routes } from "../../router/routes";
+import colors from "../../assets/styles/abstracts/color";
 
 const HomeComponent = () => {
   const user = useStore("user");
@@ -26,7 +27,7 @@ const HomeComponent = () => {
           style={{
             fontSize: 55,
             fontWeight: "500",
-            color: "#E48700",
+            color: colors.buttonPrimaryColor,
             textAlign: "center",
           }}
         >

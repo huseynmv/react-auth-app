@@ -7,10 +7,7 @@ import { useLogin } from "./actions/login.mutation";
 import { ILoginFormValues } from "./login";
 import { Router, useNavigate } from "react-router-dom";
 import { Routes } from "../../router/routes";
-
-const CustomLabel = () => (
-  <div style={{ color: "red", fontWeight: "bold" }}>Custom Label:</div>
-);
+import colors from "../../assets/styles/abstracts/color";
 
 const LoginComponent = () => {
   const navigate = useNavigate();
@@ -122,8 +119,8 @@ const LoginComponent = () => {
               style={{
                 width: "100%",
                 fontSize: 16,
-                backgroundColor: "#FFF4E3",
-                color: "#BC7E23",
+                backgroundColor: colors.buttonSecondaryColor,
+                color: colors.secondaryButtonTextColor,
               }}
               className="w-100"
               type="primary"

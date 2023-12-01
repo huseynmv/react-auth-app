@@ -1,5 +1,7 @@
 import { createUseStyles } from "react-jss";
 import { breakpoint } from "../../assets/styles/abstracts/mixins";
+import colors from "../../assets/styles/abstracts/color";
+import { rem } from "../../assets/styles/abstracts/functions";
 const styles = {
   page: {
     display: "flex",
@@ -7,14 +9,14 @@ const styles = {
   },
   left: {
     width: "50%",
-    backgroundColor: "#ECBC76",
+    backgroundColor: colors.bgColor,
     [breakpoint(1200)]: {
       width: "100%",
     },
   },
   right: {
     width: "50%",
-    backgroundColor: "#FFFEF9",
+    backgroundColor: colors.homebgColor,
     [breakpoint(1200)]: {
       width: "0%",
     },
@@ -27,13 +29,13 @@ const styles = {
     backgroundColor: "white",
     boxShadow: "0px 4px 35px rgba(0, 0, 0, 0.08)",
     borderRadius: 40,
-    padding: "260px",
+    padding: rem(260),
     justifyContent: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     [breakpoint(1200)]: {
-      padding: "250px 30px",
+      padding: rem(250) + "" + rem(30),
     },
   },
 };
