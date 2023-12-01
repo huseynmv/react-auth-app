@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-
+import { breakpoint } from "../../assets/styles/abstracts/mixins";
 const styles = {
   page: {
     display: "flex",
@@ -8,10 +8,16 @@ const styles = {
   left: {
     width: "50%",
     backgroundColor: "#ECBC76",
+    [breakpoint(1200)]: {
+      width: "100%",
+    },
   },
   right: {
     width: "50%",
     backgroundColor: "#FFFEF9",
+    [breakpoint(1200)]: {
+      width: "0%",
+    },
   },
   wrapper: {
     position: "absolute",
@@ -21,14 +27,14 @@ const styles = {
     backgroundColor: "white",
     boxShadow: "0px 4px 35px rgba(0, 0, 0, 0.08)",
     borderRadius: 40,
-    paddingTop: 277,
-    paddingBottom: 277,
-    paddingLeft: 465,
-    paddingRight: 465,
+    padding: "260px",
     justifyContent: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    [breakpoint(1200)]: {
+      padding: "250px 30px",
+    },
   },
 };
 
