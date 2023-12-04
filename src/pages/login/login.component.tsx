@@ -35,7 +35,6 @@ const LoginComponent = () => {
           message: "Iinput required",
         },
         {
-          // add a pattern for email regex
           pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
           message: "Invalid email",
         },

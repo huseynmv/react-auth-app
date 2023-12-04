@@ -1,6 +1,3 @@
-// import { API } from "core/configs/api.config";
-// import axiosInstance from "core/configs/axios.config";
-
 import { IRegisterFormValues } from "../register";
 import { API } from "../../../core/configs/api.config";
 import axiosInstance from "../../../core/configs/axios.config";

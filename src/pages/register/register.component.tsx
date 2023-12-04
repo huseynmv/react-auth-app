@@ -32,7 +32,6 @@ const RegisterComponent = () => {
           message: "Iinput required",
         },
         {
-          // add a pattern for email regex
           pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
           message: "Invalid email",
         },
@@ -58,10 +57,6 @@ const RegisterComponent = () => {
         </div>
       </div>
       <div className={styles.form}>
-        {/* <div className={styles.title}>
-          <p>Welcome to the site</p>
-        </div>
-        <p className={styles.subTitle}>Sign Up</p> */}
         <div className={styles.header}>
           <div>
             <p className={styles.title}>Welcome to Site</p>
@@ -99,7 +94,6 @@ const RegisterComponent = () => {
             }}
           >
             <Form.Item
-              //   rules={rules.email}
               style={{ marginRight: 20 }}
               name="username"
               label="User name"

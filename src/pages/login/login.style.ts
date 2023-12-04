@@ -9,7 +9,6 @@ const styles = {
     backgroundColor: colors.bgColor,
     minHeight: "100vh",
     width: "50%",
-    // padding: 180,
     [breakpoint(1200)]: {
       width: "100%",
     },
