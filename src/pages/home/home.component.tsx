@@ -3,7 +3,6 @@ import { useHomeStyles } from "./home.style";
 import { removeToken } from "../../core/helpers/get-token";
 import { useNavigate } from "react-router-dom";
 import { Routes } from "../../router/routes";
-import colors from "../../assets/styles/abstracts/color";
 
 const HomeComponent = () => {
   const user = useStore("user");

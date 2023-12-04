@@ -1,6 +1,7 @@
 import { createUseStyles } from "react-jss";
 import colors from "../../assets/styles/abstracts/color";
 import { breakpoint } from "../../assets/styles/abstracts/mixins";
+import { rem } from "../../assets/styles/abstracts/functions";
 
 const styles = {
   page: { height: "100vh" },
@@ -26,13 +27,13 @@ const styles = {
     left: "50%",
     zIndex: 999,
     boxShadow: "0px 4px 35px rgba(0, 0, 0, 0.88 )",
-    borderRadius: "40px",
-    padding: "50px 40px",
+    borderRadius: rem(40),
+    padding: rem(50) + " " + rem(40),
     backgroundColor: "white",
     [breakpoint(1200)]: {
       maxWidth: "100%",
       margin: 0,
-      padding: "50px 10px",
+      padding: rem(50) + " " + rem(10),
     },
   },
   title: {
