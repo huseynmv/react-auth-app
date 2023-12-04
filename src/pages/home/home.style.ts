@@ -29,13 +29,41 @@ const styles = {
     backgroundColor: "white",
     boxShadow: "0px 4px 35px rgba(0, 0, 0, 0.08)",
     borderRadius: 40,
-    padding: rem(260),
+    padding: "220px 400px",
     justifyContent: "center",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     [breakpoint(1200)]: {
-      padding: rem(250) + "" + rem(30),
+      padding: "200px 0px",
+      width: "100%",
+    },
+  },
+  logoutBtn: {
+    width: "100%",
+    backgroundColor: colors.buttonPrimaryColor,
+    borderWidth: 0,
+    padding: "15px",
+    boxShadow: "0px 4px 19px rgba(119, 147, 65, 0.30)",
+    borderRadius: 10,
+    marginTop: 85,
+    color: "white",
+  },
+  txtHeader: {
+    fontSize: 55,
+    fontWeight: "500",
+    textAlign: "center",
+    [breakpoint(1200)]: {
+      fontSize: 40,
+    },
+  },
+  username: {
+    fontSize: 55,
+    fontWeight: "500",
+    color: colors.buttonPrimaryColor,
+    textAlign: "center",
+    [breakpoint(1200)]: {
+      fontSize: 40,
     },
   },
 };

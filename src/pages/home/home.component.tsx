@@ -17,21 +17,10 @@ const HomeComponent = () => {
         <div className={styles.right}></div>
       </div>
       <div className={styles.wrapper}>
-        <p style={{ fontSize: 55, fontWeight: "500", textAlign: "center" }}>
-          Welcome
-        </p>{" "}
-        <br />{" "}
-        <p
-          style={{
-            fontSize: 55,
-            fontWeight: "500",
-            color: colors.buttonPrimaryColor,
-            textAlign: "center",
-          }}
-        >
-          {user}
-        </p>
+        <p className={styles.txtHeader}>Welcome</p> <br />{" "}
+        <p className={styles.username}>{user}</p>
         <button
+          className={styles.logoutBtn}
           onClick={() => {
             removeToken();
             navigate(Routes.login);
