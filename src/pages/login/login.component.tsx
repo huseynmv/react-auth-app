@@ -53,15 +53,15 @@ const LoginComponent = () => {
     <div className={styles.page}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
-          <img src={bgLeft} alt="" />
+          <img src={bgLeft} className={styles.leftImg} alt="" />
         </div>
         <div className={styles.right}>
-          <img src={bgRight} alt="" />
+          <img src={bgRight} className={styles.rightImg} alt="" />
         </div>
       </div>
       <div className={styles.form}>
-        <div className={styles.title}>
-          <p>Welcome to the site</p>
+        <div>
+          <p className={styles.title}>Welcome to the site</p>
         </div>
         <p className={styles.subTitle}>Sign In</p>
         <Form
@@ -81,7 +81,15 @@ const LoginComponent = () => {
               </p>
             }
           >
-            <Input placeholder="Username or email" type="email" />
+            <Input
+              placeholder="Username or email"
+              type="email"
+              style={{
+                height: 57,
+                boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+                marginTop: 13,
+              }}
+            />
           </Form.Item>
           <Form.Item
             rules={rules.password}
@@ -90,7 +98,15 @@ const LoginComponent = () => {
             name="password"
             label="Enter your password"
           >
-            <Input placeholder="Password" type="password" />
+            <Input
+              placeholder="Password"
+              type="password"
+              style={{
+                height: 57,
+                marginTop: 13,
+                boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+              }}
+            />
           </Form.Item>
           <div
             style={{
@@ -106,6 +122,8 @@ const LoginComponent = () => {
                 width: "100%",
                 fontSize: 16,
                 backgroundColor: "#E48700",
+                height: 54,
+                boxShadow: "0px 4px 19px 0px rgba(119, 147, 65, 0.30)",
               }}
               className="w-100"
               type="primary"
@@ -113,13 +131,21 @@ const LoginComponent = () => {
             >
               Sign In
             </Button>
-            <span style={{ marginTop: 33, marginBottom: 33 }}>or</span>
+            <span
+              className={styles.or}
+              style={{ marginTop: 33, marginBottom: 33 }}
+            >
+              OR
+            </span>
             <Button
               style={{
                 width: "100%",
+                borderRadius: 10,
                 fontSize: 16,
                 backgroundColor: colors.buttonSecondaryColor,
                 color: colors.secondaryButtonTextColor,
+                height: 54,
+                boxShadow: "0px 4px 19px 0px rgba(119, 147, 65, 0.30)",
               }}
               className="w-100"
               type="primary"

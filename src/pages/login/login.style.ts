@@ -13,11 +13,19 @@ const styles = {
       width: "100%",
     },
   },
+  leftImg: {
+    paddingLeft: 181,
+    paddingTop: 193,
+  },
   right: {
     backgroundColor: "#FFFFFF",
     [breakpoint(1200)]: {
       width: "0%",
     },
+  },
+  rightImg: {
+    paddingTop: 144,
+    paddingLeft: 190,
   },
   wrapper: { display: "flex" },
   form: {
@@ -26,7 +34,7 @@ const styles = {
     top: "50%",
     left: "50%",
     zIndex: 999,
-    boxShadow: "0px 4px 35px rgba(0, 0, 0, 0.88 )",
+    boxShadow: "0px 4px 35px 0px rgba(0, 0, 0, 0.08)",
     borderRadius: rem(40),
     // padding: "50px 40px",
     padding: rem(50) + " " + rem(40),
@@ -42,7 +50,7 @@ const styles = {
     color: colors.textPrimaryColor,
     fontSize: 20,
     fontWeight: "400",
-    padding: rem(0) + " " + rem(188),
+    padding: rem(0) + " " + rem(150),
     [breakpoint(1200)]: {
       padding: rem(0) + " " + rem(100),
       float: "left",
@@ -52,11 +60,18 @@ const styles = {
   subTitle: {
     color: "black",
     fontSize: 55,
+    fontFamily: "Poppins",
     fontWeight: "500",
     textAlign: "center",
     [breakpoint(1200)]: {
       fontSize: 40,
     },
+  },
+  or: {
+    color: "#ABABAB",
+    fontFamily: "Poppins",
+    fontSize: 16,
+    fontWeight: "400",
   },
 };
 
