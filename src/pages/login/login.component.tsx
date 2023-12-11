@@ -61,9 +61,19 @@ const LoginComponent = () => {
       </div>
       <div className={styles.form}>
         <div>
-          <p className={styles.title}>Welcome to the site</p>
+          <p className={`${styles.title} col-12`}>
+            Welcome to the <span className={styles.site}>Site</span>
+          </p>
         </div>
         <p className={styles.subTitle}>Sign In</p>
+        <Button
+          className={styles.signInBtnMobile}
+          type="primary"
+          htmlType="submit"
+          onClick={() => navigate(Routes.register)}
+        >
+          Sign Up
+        </Button>
         <Form
           name="login"
           layout="vertical"
@@ -76,7 +86,7 @@ const LoginComponent = () => {
             style={{ marginTop: 38 }}
             name="email"
             label={
-              <p style={{ fontSize: "16px" }}>
+              <p style={{ fontSize: "16px", width: 300 }}>
                 Enter your username or email address
               </p>
             }
@@ -107,6 +117,15 @@ const LoginComponent = () => {
                 boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
               }}
             />
+            <p
+              style={{
+                textAlign: "end",
+                paddingTop: 10,
+                color: colors.buttonPrimaryColor,
+              }}
+            >
+              Forgot password?
+            </p>
           </Form.Item>
           <div
             style={{
@@ -121,6 +140,7 @@ const LoginComponent = () => {
               style={{
                 width: "100%",
                 fontSize: 16,
+                marginTop: 33,
                 backgroundColor: "#E48700",
                 height: 54,
                 boxShadow: "0px 4px 19px 0px rgba(119, 147, 65, 0.30)",
@@ -138,16 +158,7 @@ const LoginComponent = () => {
               OR
             </span>
             <Button
-              style={{
-                width: "100%",
-                borderRadius: 10,
-                fontSize: 16,
-                backgroundColor: colors.buttonSecondaryColor,
-                color: colors.secondaryButtonTextColor,
-                height: 54,
-                boxShadow: "0px 4px 19px 0px rgba(119, 147, 65, 0.30)",
-              }}
-              className="w-100"
+              className={styles.signInBtn}
               type="primary"
               htmlType="submit"
               onClick={() => navigate(Routes.register)}

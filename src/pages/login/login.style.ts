@@ -16,6 +16,10 @@ const styles = {
   leftImg: {
     paddingLeft: 181,
     paddingTop: 193,
+    [breakpoint(1200)]: {
+      display: "none",
+      padding: 0,
+    },
   },
   right: {
     backgroundColor: "#FFFFFF",
@@ -26,6 +30,9 @@ const styles = {
   rightImg: {
     paddingTop: 144,
     paddingLeft: 190,
+    [breakpoint(1200)]: {
+      padding: 0,
+    },
   },
   wrapper: { display: "flex" },
   form: {
@@ -44,6 +51,7 @@ const styles = {
       margin: 0,
       paddingLeft: rem(10),
       paddingRight: rem(10),
+      // paddingRight: rem(),
     },
   },
   title: {
@@ -52,7 +60,8 @@ const styles = {
     fontWeight: "400",
     padding: rem(0) + " " + rem(150),
     [breakpoint(1200)]: {
-      padding: rem(0) + " " + rem(100),
+      padding: rem(0) + " " + rem(80),
+      paddingLeft: rem(90),
       float: "left",
       fontSize: 16,
     },
@@ -65,6 +74,7 @@ const styles = {
     textAlign: "center",
     [breakpoint(1200)]: {
       fontSize: 40,
+      marginTop: rem(33),
     },
   },
   or: {
@@ -72,6 +82,41 @@ const styles = {
     fontFamily: "Poppins",
     fontSize: 16,
     fontWeight: "400",
+    [breakpoint(1200)]: {
+      display: "none",
+    },
+  },
+  site: {
+    [breakpoint(1200)]: {
+      color: colors.buttonPrimaryColor,
+      fontSize: 16,
+    },
+  },
+  signInBtn: {
+    width: "100%",
+    borderRadius: 10,
+    fontSize: 16,
+    backgroundColor: colors.buttonSecondaryColor,
+    color: colors.secondaryButtonTextColor,
+    height: 54,
+    boxShadow: "0px 4px 19px 0px rgba(119, 147, 65, 0.30)",
+    [breakpoint(1200)]: {
+      display: "none",
+    },
+  },
+  signInBtnMobile: {
+    width: "100%",
+    borderRadius: 10,
+    marginTop: 33,
+    fontSize: 16,
+    backgroundColor: colors.buttonSecondaryColor,
+    color: colors.secondaryButtonTextColor,
+    height: 54,
+    boxShadow: "0px 4px 19px 0px rgba(119, 147, 65, 0.30)",
+    display: "none",
+    [breakpoint(1200)]: {
+      display: "block",
+    },
   },
 };
 

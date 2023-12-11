@@ -32,7 +32,7 @@ const App = () => {
           maxHeight: "80vh",
         }}
       />
-      <ReactQueryDevtools initialIsOpen={false} />
+      {/* <ReactQueryDevtools initialIsOpen={false} /> */}
     </QueryClientProvider>
   );
 };
