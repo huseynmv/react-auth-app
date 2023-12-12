@@ -2,7 +2,9 @@ import { IState } from "../../store/store";
 
 const loadState = (): IState => {
   try {
-    const serializedState = localStorage.getItem("reduxState");
+    const serializedState = localStorage.getItem(
+      "Architecture (Mode: Default)-token"
+    );
     if (serializedState === null) {
       return {
         user: null,

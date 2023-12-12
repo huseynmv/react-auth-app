@@ -1,6 +1,6 @@
 import { environment } from "../configs/app.config";
 
-export const getToken = (): string | null => {
+export const getToken = (): string | any => {
   return localStorage.getItem(`${environment.applicationName}-token`);
 };
 

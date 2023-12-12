@@ -7,6 +7,8 @@ import { setUser } from "../../../store/store.reducer";
 import { setToken } from "../../../core/helpers/get-token";
 import { Routes } from "../../../router/routes";
 
+import { jwtDecode } from "jwt-decode";
+
 export const useLogin = () => {
   const navigate = useNavigate();
   return useMutation({
@@ -14,9 +16,12 @@ export const useLogin = () => {
       return login(credentials);
     },
     onSuccess: (response) => {
-      console.log(response);
       setToken(response.accessToken);
-      store.dispatch(setUser(response.user.email));
+      console.log(response);
+
+      const user = jwtDecode(response.accessToken);
+
+      store.dispatch(setUser(user));
       navigate(Routes.home);
     },
     onError: (error: Error) => {

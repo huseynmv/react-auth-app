@@ -6,6 +6,7 @@ import { setUser } from "../../../store/store.reducer";
 import { setToken } from "../../../core/helpers/get-token";
 import { Routes } from "../../../router/routes";
 import { register } from "./register.service";
+import { jwtDecode } from "jwt-decode";
 
 export const useRegister = () => {
   const navigate = useNavigate();
@@ -14,9 +15,12 @@ export const useRegister = () => {
       return register(credentials);
     },
     onSuccess: (response) => {
-      console.log(response);
       setToken(response.accessToken);
-      store.dispatch(setUser(response.user.email));
+      console.log(response);
+
+      const user = jwtDecode(response.accessToken);
+
+      store.dispatch(setUser(user));
       navigate(Routes.home);
     },
     onError: (error: Error) => {

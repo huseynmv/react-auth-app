@@ -1,9 +1,22 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { IState } from "./store";
-import loadState from "../core/helpers/loadState";
-import saveState from "../core/helpers/saveState";
+import { jwtDecode } from "jwt-decode";
 
-const initialState: IState = loadState();
+interface DecodedToken {
+  email: string;
+  // Other properties you might have in your decoded token
+}
+const storedAccessToken = localStorage.getItem(
+  "Architecture (Mode: Default)-token"
+);
+const decodedToken = storedAccessToken
+  ? jwtDecode<DecodedToken>(storedAccessToken)
+  : null;
+
+const initialState: IState = {
+  user: decodedToken ? { email: decodedToken.email } : null,
+  loader: false,
+};
 
 export const rootSlice = createSlice({
   name: "root",
@@ -11,7 +24,7 @@ export const rootSlice = createSlice({
   reducers: {
     setUser: (state: IState, action: PayloadAction<any>) => {
       state.user = action.payload;
-      saveState(state);
+      // saveState(state);
     },
     setLoader: (state: IState, action: PayloadAction<boolean>) => {
       state.loader = action.payload;

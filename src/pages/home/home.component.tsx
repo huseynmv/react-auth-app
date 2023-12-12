@@ -16,8 +16,8 @@ const HomeComponent = () => {
         <div className={styles.right}></div>
       </div>
       <div className={styles.wrapper}>
-        <p className={styles.txtHeader}>Welcome</p> <br />{" "}
-        <p className={styles.username}>{user}</p>
+        <p className={styles.txtHeader}>Welcome</p> <br />
+        <p className={styles.username}>{user.email}</p>
         <button
           className={styles.logoutBtn}
           onClick={() => {

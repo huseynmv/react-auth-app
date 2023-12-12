@@ -72,6 +72,27 @@
       "username": "salam",
       "number": "salam",
       "id": 11
+    },
+    {
+      "email": "jamil@gmail.com",
+      "password": "$2a$10$CkGHY9BV5WbfOthcn6EKYOylml.hk1hF4XFd.gkh4UYeIjrgR0lVK",
+      "username": "salam",
+      "number": "salam",
+      "id": 12
+    },
+    {
+      "email": "yusif@azin.com",
+      "password": "$2a$10$ODrRxLebE7S41JrYTC59j.jQ10yZ9ieGbgj66LLq3qyFSuk3jO6Ea",
+      "username": "salam",
+      "number": "salam",
+      "id": 13
+    },
+    {
+      "email": "salam@azin.com",
+      "password": "$2a$10$8s01zQVcDrNvuktSOH3Pa.OiMspgEejifqRf6fYX0K0DJAA6c1ar6",
+      "username": "salam",
+      "number": "salam",
+      "id": 14
     }
   ]
 }

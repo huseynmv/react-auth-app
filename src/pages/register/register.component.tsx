@@ -87,7 +87,15 @@ const RegisterComponent = () => {
             label="Enter your username or email address"
             className={styles.label}
           >
-            <Input placeholder="Username or email" type="email" />
+            <Input
+              placeholder="Username or email"
+              type="email"
+              style={{
+                height: 57,
+                boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+                marginTop: 13,
+              }}
+            />
           </Form.Item>
           <div
             style={{
@@ -105,17 +113,39 @@ const RegisterComponent = () => {
                 placeholder="Username or email"
                 type="username"
                 name="username"
+                style={{
+                  height: 57,
+                  boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+                  marginTop: 13,
+                }}
               />
             </Form.Item>
             <Form.Item name="number" label="Contact Number">
-              <Input placeholder="Number" type="" />
+              <Input
+                placeholder="Number"
+                type=""
+                style={{
+                  height: 57,
+                  boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+                  marginTop: 13,
+                }}
+              />
             </Form.Item>
           </div>
           <Form.Item name="password" label="Enter your password">
-            <Input placeholder="Password" type="password" />
+            <Input
+              placeholder="Password"
+              type="password"
+              style={{
+                height: 57,
+                boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+                marginTop: 13,
+              }}
+            />
           </Form.Item>
           <div>
             <Button
+              style={{ height: 54 }}
               type="primary"
               htmlType="submit"
               loading={isLoading}

@@ -43,6 +43,7 @@ const styles = {
     left: "50%",
     zIndex: 999,
     boxShadow: "0px 4px 35px rgba(0, 0, 0, 0.88 )",
+
     borderRadius: rem(40),
     padding: rem(50) + " " + rem(40),
     backgroundColor: "white",
