@@ -3,8 +3,6 @@ import { API } from "../../../core/configs/api.config";
 import axiosInstance from "../../../core/configs/axios.config";
 
 export const login = (credentials: ILoginFormValues): Promise<any> => {
-  // console.log(credentials);
-
   return axiosInstance.post(API.login, credentials).then((res) => {
     return res.data;
   });

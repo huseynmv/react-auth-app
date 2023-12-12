@@ -4,7 +4,6 @@ import { jwtDecode } from "jwt-decode";
 
 interface DecodedToken {
   email: string;
-  // Other properties you might have in your decoded token
 }
 const storedAccessToken = localStorage.getItem(
   "Architecture (Mode: Default)-token"
@@ -24,7 +23,6 @@ export const rootSlice = createSlice({
   reducers: {
     setUser: (state: IState, action: PayloadAction<any>) => {
       state.user = action.payload;
-      // saveState(state);
     },
     setLoader: (state: IState, action: PayloadAction<boolean>) => {
       state.loader = action.payload;

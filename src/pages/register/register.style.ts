@@ -58,11 +58,7 @@ const styles = {
     fontSize: 20,
     fontWeight: "400",
     fontFamily: "Poppins",
-    // padding: rem(0) + " " + rem(150),
     [breakpoint(1200)]: {
-      // padding: rem(0) + " " + rem(80),
-      // paddingLeft: rem(90),
-      // float: "left",
       width: rem(130),
       fontSize: 16,
     },

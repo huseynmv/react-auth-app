@@ -16,10 +16,7 @@ export const useRegister = () => {
     },
     onSuccess: (response) => {
       setToken(response.accessToken);
-      console.log(response);
-
       const user = jwtDecode(response.accessToken);
-
       store.dispatch(setUser(user));
       navigate(Routes.home);
     },

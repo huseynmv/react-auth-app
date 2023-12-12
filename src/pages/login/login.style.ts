@@ -43,7 +43,6 @@ const styles = {
     zIndex: 999,
     boxShadow: "0px 4px 35px 0px rgba(0, 0, 0, 0.08)",
     borderRadius: rem(40),
-    // padding: "50px 40px",
     padding: rem(30) + " " + rem(40),
     backgroundColor: "white",
     [breakpoint(1200)]: {
@@ -51,7 +50,6 @@ const styles = {
       margin: 0,
       paddingLeft: rem(10),
       paddingRight: rem(10),
-      // paddingRight: rem(),
     },
   },
   title: {
