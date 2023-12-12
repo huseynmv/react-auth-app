@@ -5,8 +5,11 @@ import bgRight from "../../assets/images/statics/background-right.png";
 import { useRegisterStyles } from "./register.style";
 import { useRegister } from "./actions/register.mutation";
 import { IRegisterFormValues } from "./register";
+import { useNavigate } from "react-router-dom";
+import { Routes } from "../../router/routes";
 
 const RegisterComponent = () => {
+  const navigate = useNavigate();
   const { mutate, isLoading } = useRegister();
 
   const styles = useRegisterStyles();
@@ -50,25 +53,25 @@ const RegisterComponent = () => {
     <div className={styles.page}>
       <div className={styles.wrapper}>
         <div className={styles.left}>
-          <img src={bgLeft} alt="" />
+          <img src={bgLeft} className={styles.leftImg} alt="" />
         </div>
         <div className={styles.right}>
-          <img src={bgRight} alt="" />
+          <img src={bgRight} className={styles.rightImg} alt="" />
         </div>
       </div>
       <div className={styles.form}>
         <div className={styles.header}>
           <div>
             <p className={styles.title}>Welcome to Site</p>
-            <p className={styles.subTitle}>Sign Up</p>
           </div>
-          <div
-            style={{
-              paddingLeft: 121,
-            }}
-          >
+          <div className={styles.headerLeftWrapper}>
             <p className={styles.headerLeftTitle}>Having Account?</p>
-            <p className={styles.headerLeftSubtitle}>Sign in</p>
+            <p
+              className={styles.headerLeftSubtitle}
+              onClick={() => navigate(Routes.login)}
+            >
+              Sign in
+            </p>
           </div>
         </div>
         <Form

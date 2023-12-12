@@ -44,7 +44,7 @@ const styles = {
     boxShadow: "0px 4px 35px 0px rgba(0, 0, 0, 0.08)",
     borderRadius: rem(40),
     // padding: "50px 40px",
-    padding: rem(50) + " " + rem(40),
+    padding: rem(30) + " " + rem(40),
     backgroundColor: "white",
     [breakpoint(1200)]: {
       maxWidth: "100%",

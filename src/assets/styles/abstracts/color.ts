@@ -1,4 +1,5 @@
 const colors = {
+  main: "black",
   buttonPrimaryColor: "#E48700",
   buttonSecondaryColor: "#FFF4E3",
   textPrimaryColor: "#000",

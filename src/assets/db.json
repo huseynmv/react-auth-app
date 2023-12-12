@@ -32,6 +32,46 @@
       "username": "huseynmv",
       "number": "0508647080",
       "id": 5
+    },
+    {
+      "email": "salam@mail.com",
+      "password": "$2a$10$INvrTDXMntxQfBn/EFZXn.e1WR3N44SKKLIGC5SBl4XcGfadAEP9i",
+      "username": "salam",
+      "number": "salam",
+      "id": 6
+    },
+    {
+      "email": "huseynmv@yahoo.com",
+      "password": "$2a$10$IkFv4AdZUB/zQNEYrBrfZ..pokgMaNTKPtFk/GhQRLobhaFDM3WQe",
+      "username": "salam",
+      "number": "salam",
+      "id": 7
+    },
+    {
+      "email": "az@mail.ru",
+      "password": "$2a$10$oTdLGjAKNJ4r/IjCRJVPfeewdwJHriejP.iftjyk1YPq3VLcSisKK",
+      "username": "salam",
+      "number": "salam",
+      "id": 8
+    },
+    {
+      "email": "ssdfsa@gmail.com",
+      "password": "$2a$10$PHVfqEYURNTjB4S38emwaOJ3wm116z0QanJKiNbYGJ2Zdhr658AbS",
+      "username": "salam",
+      "number": "salam",
+      "id": 9
+    },
+    {
+      "email": "huseyn@gmail.com",
+      "password": "$2a$10$Q.i8Md1U3YW0j0vEm9yEk.iGD28jq9hcD/PbhWvhxq4g/mRtFT0Ke",
+      "id": 10
+    },
+    {
+      "email": "assadwsadf@gmail.com",
+      "password": "$2a$10$KahMXC/7j/PQoH1bXMTNruOkgwk8nrXw8QwMZxu.Jm0hr3ZEiFda2",
+      "username": "salam",
+      "number": "salam",
+      "id": 11
     }
   ]
 }

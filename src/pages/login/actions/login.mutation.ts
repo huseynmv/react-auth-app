@@ -14,7 +14,7 @@ export const useLogin = () => {
       return login(credentials);
     },
     onSuccess: (response) => {
-      console.log(response.user.email);
+      console.log(response);
       setToken(response.accessToken);
       store.dispatch(setUser(response.user.email));
       navigate(Routes.home);

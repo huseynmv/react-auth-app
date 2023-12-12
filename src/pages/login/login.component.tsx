@@ -102,7 +102,7 @@ const LoginComponent = () => {
             />
           </Form.Item>
           <Form.Item
-            rules={rules.password}
+            // rules={rules.password}
             required={false}
             style={{ marginTop: 38 }}
             name="password"
@@ -111,22 +111,23 @@ const LoginComponent = () => {
             <Input
               placeholder="Password"
               type="password"
+              name="password"
               style={{
                 height: 57,
                 marginTop: 13,
                 boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
               }}
             />
-            <p
-              style={{
-                textAlign: "end",
-                paddingTop: 10,
-                color: colors.buttonPrimaryColor,
-              }}
-            >
-              Forgot password?
-            </p>
           </Form.Item>
+          <p
+            style={{
+              textAlign: "end",
+              // paddingTop: 10,
+              color: colors.buttonPrimaryColor,
+            }}
+          >
+            Forgot password?
+          </p>
           <div
             style={{
               display: "flex",
@@ -158,9 +159,8 @@ const LoginComponent = () => {
               OR
             </span>
             <Button
-              className={styles.signInBtn}
+              className={`${styles.signInBtn} w-100`}
               type="primary"
-              htmlType="submit"
               onClick={() => navigate(Routes.register)}
             >
               Sign Up
